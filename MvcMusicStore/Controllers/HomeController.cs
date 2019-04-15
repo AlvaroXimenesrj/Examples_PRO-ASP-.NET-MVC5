@@ -8,6 +8,13 @@ namespace MvcMusicStore.Controllers
 {
     public class HomeController : Controller
     {
+        public ActionResult Message()
+        {
+            ViewBag.Message = "This is a pastial View";
+            return PartialView();
+        }
+
+
         public ActionResult Index()
         {
             return View();
@@ -26,5 +33,12 @@ namespace MvcMusicStore.Controllers
 
             return View();
         }
+
+        public ActionResult Edit()
+        {
+            return View();
+        }
     }
 }
+
+
